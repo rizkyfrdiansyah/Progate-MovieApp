@@ -9,11 +9,11 @@ export default [
   ...tseslint.configs.recommended,
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-    extends: [
-      'plugin:react/recommended',
-      'standard-with-typescript',
-      'prettier', //Ditambahkan
-    ],
+    // extends: [
+    //   'plugin:react/recommended',
+    //   'standard-with-typescript',
+    //   'prettier', //Ditambahkan
+    // ],
     languageOptions: {
       parserOptions: {
         ecmaFeatures: { jsx: true },
