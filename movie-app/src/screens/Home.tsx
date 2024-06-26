@@ -1,10 +1,12 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import HomeStackNavigation from '../navigations/HomeStackNavigation'
+import { NativeStackScreenProps } from 'react-native-screens/lib/typescript/native-stack/types'
+import { ParamListBase } from '@react-navigation/native'
 
-export default function Home(): JSX.Element {
-  return (
-    <View>
-      <Text>Home</Text>
-    </View>
-  )
+function Home(
+  props: NativeStackScreenProps<ParamListBase, 'Home'>,
+): JSX.Element {
+  return <HomeStackNavigation {...props} />
 }
+
+export default Home
